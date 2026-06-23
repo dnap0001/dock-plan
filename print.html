@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dock Build Plan — Print</title>
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+  <div class="print-toolbar">
+    <p><a href="index.html">← Back to site</a> · Use <strong>Print</strong> or <strong>Save as PDF</strong> (Letter, portrait)</p>
+    <button type="button" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <article class="document">
+    <header class="doc-header">
+      <h1>Dock Build Plan</h1>
+      <p class="subtitle">16′ × 14′ main · 6′ × 5′ side platform · 17′ total pier · Pier of D'Nort temp section</p>
+      <p class="meta">Orientation: standing on shore, facing the lake · Pressure-treated lumber · Galvanized fasteners · No permit (rebuild)</p>
+    </header>
+
+    <section class="page-section">
+      <h2>Summary</h2>
+      <div class="summary-row">
+        <div class="summary-box"><span class="num">16′ × 14′</span><span class="lbl">Main section</span></div>
+        <div class="summary-box"><span class="num">6′ × 5′</span><span class="lbl">Side platform</span></div>
+        <div class="summary-box"><span class="num">17′</span><span class="lbl">Total pier</span></div>
+        <div class="summary-box"><span class="num">11</span><span class="lbl">Pipe pilings</span></div>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>Main section</h3>
+          <ul class="compact">
+            <li>Two 7′ stages; mid-span doubled 2×10 beam at 7′ from shore</li>
+            <li>Shore edge bolted through to existing wood dock (~24″ OC)</li>
+            <li>2×10 rim + 2×12 face on lake, left, right (full span)</li>
+            <li>2×6 stringers @ 16″ OC on joist hangers; 7′ span</li>
+            <li>1×5 decking flat (1″ × 5.375″), 16′ boards along shore, ¼″ gap</li>
+            <li>9 pipe pilings (2.5″ or 3″ Sch 40) inside frame</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Side platform &amp; temp pier</h3>
+          <ul class="compact">
+            <li>~11′ left of main section (facing lake)</li>
+            <li>2 pilings, 1′ in from lake edge</li>
+            <li>Doubled 2×10 face plate at lake end (Pier of D'Nort bolts)</li>
+            <li>Temp section: 6′ × 12′ → 5′ fixed + 12′ temp = 17′ pier</li>
+            <li>Deck screws: 2 per stringer crossing (900 total order)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section avoid-break">
+      <h2>Blueprint — Plan View</h2>
+      <figure>
+        <img src="assets/plan-view.svg" alt="Plan view of dock layout">
+        <figcaption>P = pipe piling · Green = 2×12 face · Red dashed = mid-span beam · Orange dashed = temp 6′×12′ pier</figcaption>
+      </figure>
+    </section>
+
+    <section class="page-section page-break avoid-break">
+      <h2>Blueprint — Rim &amp; Decking</h2>
+      <figure>
+        <img src="assets/rim-section.svg" alt="Cross-section of rim and decking">
+        <figcaption>1×5 boards laid flat; cut edges flush with 2×12 face; deck top flush with 2×12 top (+1″ above 2×10)</figcaption>
+      </figure>
+
+      <h3>Piling layout — main section</h3>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Location</th><th>Coords (x, y)*</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>P1</td><td>Right shore corner</td><td>(16, 0)</td></tr>
+          <tr><td>P2</td><td>Right edge, mid (beam)</td><td>(16, 7)</td></tr>
+          <tr><td>P3</td><td>Right lake corner</td><td>(16, 14)</td></tr>
+          <tr><td>P4</td><td>Lake edge, center</td><td>(8, 14)</td></tr>
+          <tr><td>P5</td><td>Lake left corner</td><td>(0, 14)</td></tr>
+          <tr><td>P6</td><td>Left edge, center (beam)</td><td>(0, 7)</td></tr>
+          <tr><td>P7</td><td>Beam interior</td><td>(4, 7)</td></tr>
+          <tr><td>P8</td><td>Beam interior, center</td><td>(8, 7)</td></tr>
+          <tr><td>P9</td><td>Beam interior</td><td>(12, 7)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">* x = feet from left shore corner; y = feet from shore. Shore edge: no pilings except P1 at right corner.</p>
+      <p class="note">Side platform: 2 pilings at ~1.5′ and 4.5′ from left, 1′ in from lake edge.</p>
+    </section>
+
+    <section class="page-section page-break">
+      <h2>Materials — Ordering List</h2>
+      <p>Order lumber in <strong>16′ lengths</strong> where noted. Pitch for decking: 5.375″ board + ¼″ gap = 5.625″/row → 30 rows (main) + 11 rows (side).</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Main</th>
+            <th>Side</th>
+            <th>Total order</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2×10 PT</td><td>6</td><td>2</td><td class="total">8 × 16′</td><td>Beam + face plate</td></tr>
+          <tr><td>2×12 PT</td><td>3</td><td>—</td><td class="total">3 × 16′</td><td>7+7 cuts, lake full</td></tr>
+          <tr><td>2×6 PT</td><td>12</td><td>2</td><td class="total">14 × 16′</td><td>7+7 or 5′ cuts</td></tr>
+          <tr><td>1×5 PT decking</td><td>30</td><td>5</td><td class="total">35 × 16′</td><td>11 × 6′ side cuts</td></tr>
+          <tr><td>Joist hangers (2×6, galv.)</td><td>48</td><td>10</td><td class="total">58</td><td></td></tr>
+          <tr><td>Outside corner brackets</td><td>4</td><td>2</td><td class="total">6</td><td></td></tr>
+          <tr><td>Inside corner brackets</td><td>4</td><td>2</td><td class="total">6</td><td></td></tr>
+          <tr><td>Inside pipe holders</td><td>9</td><td>2</td><td class="total">11</td><td>2.5″ or 3″ ID</td></tr>
+          <tr><td>Galv. pipe Sch 40</td><td>9</td><td>2</td><td class="total">11</td><td>8′/10′/12′ mix</td></tr>
+          <tr><td>½″ carriage bolts</td><td>70</td><td>16</td><td class="total">86</td><td>4″–10″ assorted</td></tr>
+          <tr><td>Fender washers</td><td>40</td><td>10</td><td class="total">50</td><td></td></tr>
+          <tr><td>Deck screws #10×3″</td><td>780</td><td>110</td><td class="total">900</td><td>2 per crossing</td></tr>
+          <tr><td>Dock rings</td><td>4–6</td><td>2</td><td class="total">6–8</td><td></td></tr>
+          <tr><td>Lag screws ½″×4″</td><td>20</td><td>8</td><td class="total">28</td><td></td></tr>
+          <tr><td>End-grain sealer</td><td>1 gal</td><td>—</td><td class="total">1 gal</td><td></td></tr>
+        </tbody>
+      </table>
+
+      <h3>16′ cut plan — 2×10</h3>
+      <table>
+        <thead><tr><th>Boards</th><th>Cuts</th></tr></thead>
+        <tbody>
+          <tr><td>1–2</td><td>Left &amp; right rim: 7′ + 7′ + 2′ off</td></tr>
+          <tr><td>3</td><td>Lake rim: 16′</td></tr>
+          <tr><td>4</td><td>Shore rim: 16′</td></tr>
+          <tr><td>5–6</td><td>Mid-span beam: 16′ + 16′</td></tr>
+          <tr><td>7</td><td>Side: 5′ + 5′ + 6′</td></tr>
+          <tr><td>8</td><td>Side face: 6′ + 6′ + 4′ off</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page-section page-break">
+      <h2>Construction Checklist</h2>
+
+      <h3>Stage 1 — Shore half (16′ × 7′)</h3>
+      <ul class="checklist compact">
+        <li>Frame shore 7′ section; bolt to existing dock (~24″ OC)</li>
+        <li>Install P1 piling at right shore corner</li>
+        <li>Laminate mid-span beam (2× 2×10 × 16′); mount pipe collars</li>
+        <li>Hang 2×6 stringers (7′) @ 16″ OC on galv. hangers</li>
+        <li>Install 2×12 face plates + inner/outer corner brackets</li>
+        <li>Deck stage 1: 1×5 × 16′, ¼″ gaps, 2 screws/crossing; seal cut ends</li>
+      </ul>
+
+      <h3>Stage 2 — Lake half (16′ × 7′)</h3>
+      <ul class="checklist compact">
+        <li>Frame lake section from stage 1 platform</li>
+        <li>Set perimeter pilings P2, P3, P4, P5</li>
+        <li>Set beam pilings P6–P9</li>
+        <li>Complete stringers, lake 2×12, corner brackets</li>
+        <li>Deck stage 2; maintain ¼″ gap alignment</li>
+      </ul>
+
+      <h3>Side platform &amp; temp pier</h3>
+      <ul class="checklist compact">
+        <li>Frame 6′ × 5′; 2×6 stringers @ 16″ OC</li>
+        <li>Install 2 pilings (1′ in from lake edge)</li>
+        <li>Doubled 2×10 face plate; bolt Pier of D'Nort hardware</li>
+        <li>Deck: 11 × 6′ boards from 16′ stock</li>
+        <li>Attach 6′ × 12′ temp section → 17′ total pier</li>
+      </ul>
+
+      <h3>Pipe lengths (field-cut)</h3>
+      <table>
+        <thead><tr><th>Water depth</th><th>Approx. pipe</th></tr></thead>
+        <tbody>
+          <tr><td>4′</td><td>7′</td></tr>
+          <tr><td>6′</td><td>9′</td></tr>
+          <tr><td>8′</td><td>11′</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Depth + frame height + ~6″ on rocky bottom. Water depth 4′–8′ across main section.</p>
+    </section>
+
+    <footer class="footer-note">
+      Dock Build Plan · Generated for field reference · index.html for interactive version
+    </footer>
+  </article>
+</body>
+</html>
