@@ -7,6 +7,9 @@
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L6,3 L0,6 Z" fill="#334155"/>
     </marker>
+    <marker id="redline-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#b91c1c"/>
+    </marker>
   </defs>
   <rect width="900" height="500" fill="#f8fafc"/>
   <text x="450" y="22" text-anchor="middle" font-size="15" font-weight="600" fill="#0f172a">Plan View - Standing on Shore, Facing Lake</text>
@@ -19,7 +22,7 @@
   <text x="620" y="240" text-anchor="middle" font-size="11" fill="#1e3a8a">16&apos; x 14&apos; (two 7&apos; stages)</text>
 
   <line x1="380" y1="240" x2="860" y2="240" stroke="#dc2626" stroke-width="3" stroke-dasharray="10 5"/>
-  <text x="865" y="244" font-size="10" fill="#dc2626" font-weight="600">Beam</text>
+  <text x="830" y="232" text-anchor="end" font-size="10" fill="#dc2626" font-weight="600">Beam</text>
 
   <rect x="50" y="300" width="180" height="150" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
   <text x="140" y="375" text-anchor="middle" font-size="11" font-weight="600" fill="#92400e">SIDE</text>
@@ -47,20 +50,62 @@
   <circle cx="80" cy="270" r="6" fill="#7c3aed" stroke="#4c1d95" stroke-width="2"/>
   <circle cx="200" cy="270" r="6" fill="#7c3aed" stroke="#4c1d95" stroke-width="2"/>
 
+  <g font-size="9" font-weight="700" fill="#4c1d95">
+    <text x="846" y="438">P1</text>
+    <text x="846" y="229">P2</text>
+    <text x="846" y="49">P3</text>
+    <text x="606" y="49">P4</text>
+    <text x="386" y="49">P5</text>
+    <text x="386" y="229">P6</text>
+    <text x="486" y="229">P7</text>
+    <text x="606" y="229">P8</text>
+    <text x="726" y="229">P9</text>
+    <text x="86" y="258">S1</text>
+    <text x="206" y="258">S2</text>
+  </g>
+
   <line x1="378" y1="30" x2="378" y2="450" stroke="#059669" stroke-width="4"/>
   <line x1="862" y1="30" x2="862" y2="450" stroke="#059669" stroke-width="4"/>
   <line x1="380" y1="28" x2="860" y2="28" stroke="#059669" stroke-width="4"/>
   <line x1="50" y1="298" x2="230" y2="298" stroke="#059669" stroke-width="3"/>
 
   <line x1="380" y1="465" x2="860" y2="465" stroke="#334155" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
-  <text x="620" y="492" text-anchor="middle" font-size="11" fill="#334155">16&apos;</text>
+  <text x="620" y="482" text-anchor="middle" font-size="11" fill="#334155">16&apos;</text>
   <line x1="875" y1="450" x2="875" y2="30" stroke="#334155" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
-  <text x="892" y="245" font-size="11" fill="#334155">14&apos;</text>
+  <text x="888" y="245" text-anchor="middle" font-size="11" fill="#334155">14&apos;</text>
   <line x1="35" y1="450" x2="35" y2="300" stroke="#334155" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
   <text x="22" y="380" text-anchor="end" font-size="10" fill="#334155">5&apos;</text>
   <line x1="35" y1="300" x2="35" y2="-60" stroke="#334155" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
   <text x="22" y="130" text-anchor="end" font-size="10" fill="#334155">12&apos;</text>
   <text x="140" y="-75" text-anchor="middle" font-size="10" fill="#334155" font-weight="600">17&apos; total pier length</text>
+
+  <g id="contractor-redlines" font-size="10" fill="#b91c1c" stroke="#b91c1c">
+    <rect x="390" y="-78" width="430" height="30" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="405" y="-59" stroke="none" font-weight="700">REDLINE: verify APA / DEC / local exemption before work</text>
+
+    <line x1="400" y1="55" x2="500" y2="235" stroke-width="2" stroke-dasharray="6 5" opacity="0.85"/>
+    <line x1="845" y1="55" x2="740" y2="235" stroke-width="2" stroke-dasharray="6 5" opacity="0.85"/>
+    <line x1="400" y1="430" x2="500" y2="250" stroke-width="2" stroke-dasharray="6 5" opacity="0.85"/>
+    <line x1="845" y1="430" x2="740" y2="250" stroke-width="2" stroke-dasharray="6 5" opacity="0.85"/>
+    <rect x="545" y="292" width="210" height="34" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="555" y="306" stroke="none" font-weight="700">REVIEW: field-add bracing</text>
+    <text x="555" y="320" stroke="none">after pile locations are set</text>
+
+    <rect x="468" y="392" width="250" height="34" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="480" y="406" stroke="none" font-weight="700">REDLINE: inspect existing dock</text>
+    <text x="480" y="420" stroke="none">before shore ledger bolts</text>
+    <line x1="468" y1="421" x2="386" y2="450" stroke-width="1.5" marker-end="url(#redline-arrow)"/>
+
+    <rect x="238" y="328" width="120" height="34" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="248" y="342" stroke="none" font-weight="700">6 x 16&apos; decking</text>
+    <text x="248" y="356" stroke="none">for 11 side cuts</text>
+    <line x1="238" y1="345" x2="205" y2="300" stroke-width="1.5" marker-end="url(#redline-arrow)"/>
+
+    <rect x="668" y="66" width="155" height="34" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="678" y="80" stroke="none" font-weight="700">Record water depth</text>
+    <text x="678" y="94" stroke="none">at each pipe</text>
+    <line x1="668" y1="96" x2="620" y2="35" stroke-width="1.5" marker-end="url(#redline-arrow)"/>
+  </g>
 
   <line x1="820" y1="80" x2="820" y2="35" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
   <text x="820" y="95" text-anchor="middle" font-size="10" fill="#334155">Lake</text>

@@ -123,6 +123,30 @@ section h2 {
   color: var(--accent-2);
 }
 
+.redline-card {
+  border-color: #ef4444;
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.12), rgba(26, 35, 50, 0.98));
+  box-shadow: inset 4px 0 0 #ef4444;
+}
+
+.redline-card h3 {
+  color: #fecaca;
+}
+
+.redline-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.redline-list li {
+  margin-bottom: 0.75rem;
+}
+
+.redline-list strong,
+.redline-inline {
+  color: #fca5a5;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

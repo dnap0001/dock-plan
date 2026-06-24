@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" font-family="Segoe UI, system-ui, sans-serif">
+  <defs>
+    <marker id="redline-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#b91c1c"/>
+    </marker>
+  </defs>
   <rect width="420" height="280" fill="#f8fafc"/>
   <text x="210" y="24" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Rim and Decking Cross-Section (Lake Edge)</text>
 
@@ -27,8 +32,21 @@
   <text x="155" y="138" font-size="8" fill="#64748b">1/4 in. gap between adjacent boards (plan view)</text>
 
   <rect x="250" y="170" width="14" height="60" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+  <rect x="236" y="228" width="42" height="7" rx="2" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
   <text x="257" y="245" font-size="9" fill="#475569">Pipe</text>
   <text x="257" y="258" font-size="8" fill="#475569">(inside)</text>
+
+  <g id="contractor-redlines" fill="#b91c1c" stroke="#b91c1c" font-size="9">
+    <rect x="42" y="52" width="190" height="30" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="52" y="65" stroke="none" font-weight="700">REDLINE: dry-lay decking</text>
+    <text x="52" y="78" stroke="none">field-rip final course to fit</text>
+    <line x1="132" y1="82" x2="132" y2="108" stroke-width="1.5" marker-end="url(#redline-arrow)"/>
+
+    <rect x="282" y="218" width="118" height="32" rx="4" fill="#fff7ed" stroke-width="1.5"/>
+    <text x="292" y="231" stroke="none" font-weight="700">Add pipe foot</text>
+    <text x="292" y="244" stroke="none">or rock pad</text>
+    <line x1="282" y1="232" x2="278" y2="232" stroke-width="1.5" marker-end="url(#redline-arrow)"/>
+  </g>
 
   <!-- +1 in. offset annotation (filled by decking) -->
   <line x1="340" y1="108" x2="380" y2="108" stroke="#059669" stroke-width="1"/>
