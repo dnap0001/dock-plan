@@ -119,6 +119,17 @@ body {
   font-weight: 700;
 }
 
+.redline-box {
+  border: 1.5pt solid #b91c1c;
+  border-left-width: 5pt;
+  padding: 0.12in;
+}
+
+.redline-box h2,
+.redline-box strong {
+  color: #b91c1c;
+}
+
 .page-section p,
 .page-section li {
   margin: 0 0 0.08in;
